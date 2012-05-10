@@ -71,6 +71,11 @@ h2 {
     -moz-border-radius:6px;
 }
 
+#description {
+    border:1px solid #DDD;
+    border-radius:2px;
+}
+
 #post {
     border:1px solid #BCD;
     outline:#BCD solid 0px;
