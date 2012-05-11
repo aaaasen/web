@@ -17,6 +17,14 @@ body {
 }
 
 
+table {
+    table-layout:fixed;
+}
+
+tr { width:100% }
+
+#td a { width:100%; }
+
 p { text-align:center; }
 
 a { text-decoration:none; font-weight:bold; }
