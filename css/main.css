@@ -31,9 +31,9 @@ p#lpara {
 
 
 a { text-decoration:none; font-weight:bold; }
-a:link { color:#444444; }
-a:visited { color:#888888; }
-a:hover { text-decoration:underline; }
+a:link { color:#111; }
+a:visited { color:inherit; }
+a:hover { color:#444; }
 a:active { color:#2FDC1C; }
 
 
