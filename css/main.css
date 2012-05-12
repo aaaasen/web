@@ -94,12 +94,15 @@ h2 {
     padding:0px;
 }
 
+@font-face {
+    font-family:"lol";
+    src: url(https://github.com/theleagueof/raleway/blob/master/webfonts/raleway_thin-webfont.ttf) format("truetype");
+}
+
 #title {
-    font-family:Raleway;
+    font-family:'Raleway', Helvetica, Arial, sans-serif;
     font-size:4em;
     padding:4px 0px;
-/*    border:1px solid #EEE;*/
-/*    background-color:#FAFAFA;*/
 }
 
 #footer {
