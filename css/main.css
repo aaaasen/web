@@ -14,18 +14,21 @@ body {
     background-color:#F8F8F8;
     padding-left:8px;
     padding-right:8px;
+    overflow:hide;
 }
 
 
-table {
+table#homogenous {
     table-layout:fixed;
 }
 
-tr { width:100% }
+td { padding:0px; }
 
-#td a { width:100%; }
+p#lpara { 
+    text-align:left;
+    padding:0px 0px 0px 10px;
+}
 
-p { text-align:center; }
 
 a { text-decoration:none; font-weight:bold; }
 a:link { color:#444444; }
@@ -82,17 +85,17 @@ h2 {
 #description {
     border:1px solid #DDD;
     border-radius:2px;
+    padding:0px;
 }
 
 #post {
-    border:1px solid #BCD;
-    outline:#BCD solid 0px;
-    padding:4px 17px;
-    background-color:#ECF2F5;
+    border:1px solid #DDD;
+    border-radius:2px;
+    padding:0px;
 }
 
 #title {
-    font-family: Raleway;
+    font-family:Raleway;
     font-size:4em;
     padding:4px 0px;
 /*    border:1px solid #EEE;*/
