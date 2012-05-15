@@ -34,8 +34,7 @@ a { text-decoration:none; font-weight:bold; }
 a:link { color:#111; }
 a:visited { color:inherit; }
 a:hover { color:#444; }
-a:active { color:#2FDC1C; }
-
+a:active { color:#000; }
 
 ul {
     list-style-type:none;
@@ -99,7 +98,8 @@ h2 {
     src: url(https://github.com/theleagueof/raleway/blob/master/webfonts/raleway_thin-webfont.ttf) format("truetype");
 }
 
-#title {
+a#title { 
+    font-weight:normal; 
     font-family:'Raleway', Helvetica, Arial, sans-serif;
     font-size:4em;
     padding:4px 0px;
