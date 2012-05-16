@@ -98,8 +98,7 @@ h2 {
     src: url(https://github.com/theleagueof/raleway/blob/master/webfonts/raleway_thin-webfont.ttf) format("truetype");
 }
 
-a
-#title { 
+a#title { 
     font-weight:normal; 
     font-family:'Raleway', Helvetica, Arial, sans-serif;
     font-size:4em;
