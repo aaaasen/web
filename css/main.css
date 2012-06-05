@@ -117,6 +117,7 @@ li {
 }
 .post {
   padding-left: 8px;
+  width: 784px;
 }
 .triangle-l {
   border-color: transparent lightgrey transparent transparent;
@@ -197,6 +198,7 @@ a#title {
   padding: 8px;
 }
 .logoholder {
+  width: 80px;
   background: #eeeeee;
   box-shadow: 0px 0px 4px 0px #808080 inset;
   -moz-box-shadow: 0px 0px 4px 0px #808080 inset;
