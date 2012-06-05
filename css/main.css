@@ -1,7 +1,7 @@
 body {
 /*    background-color:#F6F9FC;*/
 /*    background-color:#FFF;*/
-    background-image:url('/img/bg/brilliant.png');
+    background-image:url('/img/bg/light_toast.png');
     color:#222;
     font-style:normal;
     font-family:Helvetica;
@@ -12,10 +12,13 @@ body {
 #content {
     width:800px;
     height:100%;
-    background-color:#F8F8F8;
+    background-color:#F6F6F6;
     padding-left:8px;
     padding-right:8px;
     overflow:hide;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+    box-shadow:0px 0px 4px 0px grey;
 }
 
 
@@ -57,23 +60,24 @@ a.block:link, a.block:visited {
     border:solid #DDD 1px;
     border-radius:2px;
 /*    border-bottom:solid #61E9DB 2px;*/
-    box-shadow:0px 0px 2px 0px darkgrey;
+    box-shadow:0px 0px 4px 0px darkgrey;
 /*    font-weight:bold;*/
 }
 
 a.block:hover {
 /*    border-bottom:solid #CCC 2px; */
-    box-shadow:0px 0px 2px 0px chartreuse;
+    box-shadow:0px 0px 6px 0px darkgrey;
     border:solid #EEE 1px;
 }
 
 a.block:active {
-    box-shadow:0px 0px 6px 0px chartreuse;
+    box-shadow:0px 0px 4px 0px grey;
     border:solid #EEE 1px;
+    box-shadow:0px 0px 4px 0px grey inset;
 }
 
 h2 {
-    border-bottom:solid #666666 1px;
+/*    border-bottom:solid #666666 1px;*/
 }
 
 #linkbar {
@@ -90,16 +94,73 @@ h2 {
     -moz-border-radius:6px;
 }
 
+.right {
+    text-align:right
+}
+
 #description {
     border:1px solid #DDD;
     border-radius:2px;
     padding:0px;
+    background:#F3F3F3;
 }
 
-#post {
+.post {
     border:1px solid #DDD;
     border-radius:2px;
     padding:0px;
+    position:relative;
+    top:-32px;
+    background:#F3F3F3;
+}
+
+.post p {
+    padding-left:8px;
+}
+
+.triangle-l {
+    border-color: transparent lightgrey transparent transparent;
+    border-style:solid;
+    border-width:16px;
+    height:0px;
+    width:0px;
+    position:relative;
+    left:-32px;
+    top:16px;
+    z-index: -1; /* displayed under bubble */
+}
+
+.triangle-r {
+    border-color:transparent transparent transparent lightgrey;
+    border-style:solid;
+    border-width:16px;
+    heighpt:0px;
+    width:0px;
+    position:relative;
+    left:800px;
+    top:-16px;
+    z-index:-1;
+}
+
+.rectangle {
+    background:gainsboro;
+    height:32px;
+    width:832px;
+    position:relative;
+    left:-16px;
+    top:0px;
+    float:left;
+    box-shadow: 0px 0px 4px 0px grey;
+    z-index:100; 
+}
+
+.rectangle h2 {
+    text-align:left;
+    font-family:Helvetica;
+    font-size:20px;
+    position:relative;
+    top:-12px;
+    padding-left:16px;
 }
 
 a#title { 
@@ -113,5 +174,4 @@ a#title {
     font-size:0.7em;
     text-align:center;
 }
-
 
