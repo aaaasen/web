@@ -88,7 +88,7 @@ td {
 
 p.lpara { 
 	text-align: left;
-	padding: 0px 0px 0px @textindent;
+	padding: 0px @textindent 0px @textindent;
 }
 
 a { 
@@ -206,7 +206,7 @@ li {
 }
 
 .rectangle {
-    background:gainsboro;
+    background:@blocklinkcolor;
     height:32px;
     width:832px;
     position:relative;
@@ -258,4 +258,16 @@ a#title {
     border:0;
     width:32px;
     height:32px;
+}
+
+#pagelogo {
+    border:0;
+    width:64px;
+    height:64px;
+    padding:8px;
+}
+
+.logoholder {
+	background: @blocklinkcolor;
+	.box-shadow(0px 0px 4px 0px grey inset);
 }
