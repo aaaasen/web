@@ -23,6 +23,7 @@ body {
 }
 table.homogenous {
   table-layout: fixed;
+  width: 800px;
 }
 table.bordered {
   border: solid #afafaf 1px;
@@ -94,9 +95,22 @@ li {
   text-align: right;
 }
 #description {
-  border: 2px solid #dddddd;
+  width: 788px;
+  border: 1px solid #dddddd;
   border-radius: 2px;
   background: #f3f3f3;
+}
+#pagelogo {
+  border: 0;
+  width: 64px;
+  height: 64px;
+  padding: 8px;
+}
+.logoholder {
+  width: 80px;
+  background: #eeeeee;
+  box-shadow: 0px 0px 4px 0px #808080 inset;
+  border-radius: 2px;
 }
 .post {
   border: 1px solid #dddddd;
@@ -180,15 +194,4 @@ a#title {
   border: 0;
   width: 32px;
   height: 32px;
-}
-#pagelogo {
-  border: 0;
-  width: 64px;
-  height: 64px;
-  padding: 8px;
-}
-.logoholder {
-  width: 80px;
-  background: #eeeeee;
-  box-shadow: 0px 0px 4px 0px #808080 inset;
 }

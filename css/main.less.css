@@ -76,6 +76,7 @@ body {
 
 table.homogenous {
 	table-layout: fixed;
+	width: 800px;
 }
 
 table.bordered {
@@ -169,9 +170,24 @@ li {
 }
 
 #description {
-    border:@descriptionborderradius solid @descriptionbordercolor;
+	width: @pagewidth - @contentpadding * 2 + 4;
+    border:@descriptionborderwidth solid @descriptionbordercolor;
     .border-radius(@descriptionborderradius);
     background: @descriptionbgcolor;
+}
+
+#pagelogo {
+    border:0;
+    width:64px;
+    height:64px;
+    padding:8px;
+}
+
+.logoholder {
+	width:80px;
+	background: @blocklinkcolor;
+	.box-shadow(0px 0px 4px 0px grey inset);
+	.border-radius(@descriptionborderradius);
 }
 
 .post {
@@ -266,17 +282,6 @@ a#title {
     height:32px;
 }
 
-#pagelogo {
-    border:0;
-    width:64px;
-    height:64px;
-    padding:8px;
-}
 
-.logoholder {
-	width:80px;
-	background: @blocklinkcolor;
-	.box-shadow(0px 0px 4px 0px grey inset);
-}
 
 
