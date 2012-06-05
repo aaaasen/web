@@ -76,6 +76,9 @@ body {
 
 table.homogenous {
 	table-layout: fixed;
+}
+
+table.bordered {
 	border: solid @tablebordercolor @tableborderwidth;
 	.border-radius(2px);
 }

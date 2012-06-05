@@ -23,6 +23,8 @@ body {
 }
 table.homogenous {
   table-layout: fixed;
+}
+table.bordered {
   border: solid #afafaf 1px;
   border-radius: 2px;
 }
