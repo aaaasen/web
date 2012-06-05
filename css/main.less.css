@@ -4,7 +4,7 @@
 @mainfont: Helvetica;
 @fontstyle: normal;
 @fontsize: 0.8em;
-@vmargin: 0px;
+@vmargin: 4px;
 
 /* variable which affect the main div content */
 @pagewidth: 800px;
@@ -69,8 +69,11 @@ body {
     background-color:@contentbg;
     padding-left:@contentpadding;
     padding-right:@contentpadding;
+	.border-radius(@bottomcornerradius);
+/*
     .border-bottom-right-radius(@bottomcornerradius);
     .border-bottom-left-radius(@bottomcornerradius);
+*/
     .box-shadow(0px 0px 4px 0px grey);
 }
 
@@ -250,11 +253,14 @@ li {
     padding-left:16px;
 }
 
+#topbar {
+	padding:8px 0px 0px 0px;
+}
+
 a#title { 
     font-weight:normal; 
     font-family:'Raleway', Helvetica, Arial, sans-serif;
     font-size:4em;
-    padding:4px 0px;
 }
 
 #footer {

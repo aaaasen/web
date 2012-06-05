@@ -10,15 +10,19 @@ body {
   font-style: normal;
   font-size: 0.8em;
   font-family: Helvetica;
-  margin: 0px 0px;
+  margin: 4px 0px;
 }
 #content {
   width: 800px;
   background-color: #f6f6f6;
   padding-left: 8px;
   padding-right: 8px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius: 10px;
+  /*
+    .border-bottom-right-radius(@bottomcornerradius);
+    .border-bottom-left-radius(@bottomcornerradius);
+*/
+
   box-shadow: 0px 0px 4px 0px #808080;
 }
 table.homogenous {
@@ -168,11 +172,13 @@ li {
   top: -12px;
   padding-left: 16px;
 }
+#topbar {
+  padding: 8px 0px 0px 0px;
+}
 a#title {
   font-weight: normal;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-size: 4em;
-  padding: 4px 0px;
 }
 #footer {
   font-size: 0.7em;
