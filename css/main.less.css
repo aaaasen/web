@@ -133,7 +133,7 @@ a.block {
 	text-decoration:none;
 	text-transform:lowercase;
 		
-	.border-radius(2px);
+/*	.border-radius(2px);*/
 }
 		
 a.block:link, a.block:visited {
@@ -193,15 +193,23 @@ li {
 	.border-radius(@descriptionborderradius);
 }
 
+#linkbar {
+	position: relative;
+	left: -@contentpadding;
+	width: @pagewidth + @contentpadding * 2;
+/*	width: @pagewidth + @contentpadding * 2;*/
+}
+
+#navbar {
+	width: inherit;
+}
+
 .post {
     border:@postborderwidth solid @postbordercolor;
 	.border-radius(@postborderradius);
     position:relative;
     top:-32px;
     background:#F3F3F3;
-}
-
-.post {
     padding-left:8px;
 	width: @pagewidth - @contentpadding * 2;
 }
