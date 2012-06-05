@@ -185,3 +185,13 @@ a#title {
     width:784px;
     box-shadow:1px -1px 1px 0px #CCC;
 }
+
+.soclink {
+    text-decoration:none;
+}
+
+.socicon {
+    border:0;
+    width:32px;
+    height:32px;
+}
