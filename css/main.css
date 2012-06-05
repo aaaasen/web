@@ -21,7 +21,6 @@ body {
     box-shadow:0px 0px 4px 0px grey;
 }
 
-
 table#homogenous {
     table-layout:fixed;
 }
@@ -175,3 +174,14 @@ a#title {
     text-align:center;
 }
 
+.groove {
+    color:white;
+    height:1px;
+    padding:0px;
+    margin:0px;
+    border:0px;
+    position:relative;
+    left:8px;
+    width:784px;
+    box-shadow:1px -1px 1px 0px #CCC;
+}
