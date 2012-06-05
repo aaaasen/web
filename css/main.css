@@ -3,6 +3,7 @@
 /* colors for content above main content div */
 /* text formatting */
 /* hyperlinks */
+/* tables */
 body {
   background-image: url('/img/bg/light_toast.png');
   color: #222222;
@@ -17,20 +18,19 @@ body {
   padding-left: 8px;
   padding-right: 8px;
   border-bottom-right-radius: 10px;
-  -moz-border-bottom-right-radius: 10px;
-  -webkit-border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  -moz-border-bottom-left-radius: 10px;
-  -webkit-border-bottom-left-radius: 10px;
   box-shadow: 0px 0px 4px 0px #808080;
-  -moz-box-shadow: 0px 0px 4px 0px #808080;
-  -webkit-box-shadow: 0px 0px 4px 0px #808080;
 }
 table.homogenous {
   table-layout: fixed;
+  border: solid #afafaf 1px;
+  border-radius: 2px;
 }
 td {
   padding: 0px;
+}
+.tabledivider {
+  background: #afafaf;
 }
 p.lpara {
   text-align: left;
@@ -61,27 +61,19 @@ a.block {
   text-decoration: none;
   text-transform: lowercase;
   border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
 }
 a.block:link,
 a.block:visited {
   border: solid #dddddd 1px;
   box-shadow: 0px 0px 4px 0px #a9a9a9;
-  -moz-box-shadow: 0px 0px 4px 0px #a9a9a9;
-  -webkit-box-shadow: 0px 0px 4px 0px #a9a9a9;
 }
 a.block:hover {
   border: solid #eeeeee 1px;
   box-shadow: 0px 0px 6px 0px #a9a9a9;
-  -moz-box-shadow: 0px 0px 6px 0px #a9a9a9;
-  -webkit-box-shadow: 0px 0px 6px 0px #a9a9a9;
 }
 a.block:active {
   border: solid #eeeeee 1px;
   box-shadow: 0px 0px 4px 0px #808080 inset;
-  -moz-box-shadow: 0px 0px 4px 0px #808080 inset;
-  -webkit-box-shadow: 0px 0px 4px 0px #808080 inset;
 }
 ul {
   list-style-type: none;
@@ -102,15 +94,11 @@ li {
 #description {
   border: 2px solid #dddddd;
   border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
   background: #f3f3f3;
 }
 .post {
   border: 1px solid #dddddd;
   border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
   position: relative;
   top: -32px;
   background: #F3F3F3;
@@ -136,7 +124,7 @@ li {
   border-color: transparent transparent transparent lightgrey;
   border-style: solid;
   border-width: 16px;
-  heighpt: 0px;
+  height: 0px;
   width: 0px;
   position: relative;
   left: 800px;
@@ -175,7 +163,7 @@ a#title {
   text-align: center;
 }
 .groove {
-  color: contentbg;
+  color: #f6f6f6;
   height: 1px;
   padding: 0px;
   margin: 0px;
@@ -201,6 +189,4 @@ a#title {
   width: 80px;
   background: #eeeeee;
   box-shadow: 0px 0px 4px 0px #808080 inset;
-  -moz-box-shadow: 0px 0px 4px 0px #808080 inset;
-  -webkit-box-shadow: 0px 0px 4px 0px #808080 inset;
 }
