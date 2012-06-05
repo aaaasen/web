@@ -1,0 +1,261 @@
+/* main variable for entire body */
+@bgimage: url('/img/bg/light_toast.png');
+@textcolor: #222;
+@mainfont: Helvetica;
+@fontstyle: normal;
+@fontsize: 0.8em;
+@vmargin: 0px;
+
+/* variable which affect the main div content */
+@pagewidth: 800px;
+@contentbg: #F6F6F6;
+@contentpadding: 8px;
+@bottomcornerradius: 10px;
+
+/* colors for content above main content div */
+@postbgcolor: #F3F3F3;
+@postbordercolor: #DDD;
+@postborderradius: 2px;
+@postborderwidth: 1px;
+
+@descriptionbgcolor: @postbgcolor;
+@descriptionbordercolor: @postbordercolor;
+@descriptionborderradius: @postborderradius;
+@descriptionborderwidth: @postborderwidth;
+
+/* text formatting */
+@textindent: 8px;
+
+/* hyperlinks */
+@linkcolor: #111;
+@blocklinkcolor: #EEE;
+@blocklinktextcolor: #000;
+@blocklinkpadding: 8px;
+@blocklinkbordercolor: #DDD;
+@blocklinkborderwidth: 1px;
+@blocklinkblur: 4px;
+
+.border-radius (@radius: 5px) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+
+.border-bottom-right-radius (@radius: 5px) {
+  border-bottom-right-radius: @radius;
+  -moz-border-bottom-right-radius: @radius;
+  -webkit-border-bottom-right-radius: @radius;
+}
+
+.border-bottom-left-radius (@radius: 5px) {
+  border-bottom-left-radius: @radius;
+  -moz-border-bottom-left-radius: @radius;
+  -webkit-border-bottom-left-radius: @radius;
+}
+
+.box-shadow (@x: 0) {
+  box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+}
+
+body {
+    background-image:@bgimage;
+    color:@textcolor;
+    font-style:@fontstyle;
+    font-size:@fontsize;
+    font-family:@mainfont;
+    margin:@vmargin 0px;
+}
+
+#content {
+    width:@pagewidth;
+    background-color:@contentbg;
+    padding-left:@contentpadding;
+    padding-right:@contentpadding;
+    .border-bottom-right-radius(@bottomcornerradius);
+    .border-bottom-left-radius(@bottomcornerradius);
+    .box-shadow(0px 0px 4px 0px grey);
+}
+
+table.homogenous {
+	table-layout: fixed;
+}
+
+td { 
+	padding: 0px; 
+}
+
+p.lpara { 
+	text-align: left;
+	padding: 0px 0px 0px @textindent;
+}
+
+a { 
+	text-decoration:none; 
+	font-weight:bold; 
+}
+	
+a:link { 
+	color: @linkcolor; 
+}
+	
+a:visited { 
+	color: @linkcolor; 
+}
+	
+a:hover { 
+	color: @linkcolor + #333; 
+}
+	
+a:active { 
+	color: @linkcolor - #111; 
+}
+	
+a.block {
+	display:block;
+
+	color:@blocklinktextcolor;
+	background-color:@blocklinkcolor;
+	
+	padding:@blocklinkpadding;
+	
+	text-align:center;
+	text-decoration:none;
+	text-transform:lowercase;
+		
+	.border-radius(2px);
+}
+		
+a.block:link, a.block:visited {
+	border:solid @blocklinkbordercolor @blocklinkborderwidth;
+	.box-shadow(0px 0px @blocklinkblur 0px darkgrey);
+}		
+
+a.block:hover {
+	border:solid @blocklinkbordercolor + #111 @blocklinkborderwidth;
+	.box-shadow(0px 0px @blocklinkblur + 2 0px darkgrey);
+}
+		
+a.block:active {
+	border:solid @blocklinkbordercolor + #111 @blocklinkborderwidth;
+	.box-shadow(0px 0px @blocklinkblur 0px grey inset);
+}
+
+
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+li { 
+	float:left; 
+}
+
+.center {
+    margin:auto;
+    width:800px;
+}
+
+.right {
+    text-align:right
+}
+
+#description {
+    border:@descriptionborderradius solid @descriptionbordercolor;
+    .border-radius(@descriptionborderradius);
+    background: @descriptionbgcolor;
+}
+
+.post {
+    border:@postborderwidth solid @postbordercolor;
+	.border-radius(@postborderradius);
+    position:relative;
+    top:-32px;
+    background:#F3F3F3;
+}
+
+.post {
+    padding-left:8px;
+}
+
+.triangle-l {
+    border-color: transparent lightgrey transparent transparent;
+    border-style:solid;
+    border-width:16px;
+    height:0px;
+    width:0px;
+    position:relative;
+    left:-32px;
+    top:16px;
+    z-index: -1; /* displayed under bubble */
+}
+
+.triangle-r {
+    border-color:transparent transparent transparent lightgrey;
+    border-style:solid;
+    border-width:16px;
+    heighpt:0px;
+    width:0px;
+    position:relative;
+    left:800px;
+    top:-16px;
+    z-index:-1;
+}
+
+.rectangle {
+    background:gainsboro;
+    height:32px;
+    width:832px;
+    position:relative;
+    left:-16px;
+    top:0px;
+    float:left;
+    box-shadow: 0px 0px 4px 0px grey;
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+    z-index:100; 
+}
+
+.rectangle h2 {
+    text-align:left;
+    font-family:Helvetica;
+    font-size:20px;
+    position:relative;
+    top:-12px;
+    padding-left:16px;
+}
+
+a#title { 
+    font-weight:normal; 
+    font-family:'Raleway', Helvetica, Arial, sans-serif;
+    font-size:4em;
+    padding:4px 0px;
+}
+
+#footer {
+    font-size:0.7em;
+    text-align:center;
+}
+
+.groove {
+    color:contentbg;
+    height:1px;
+    padding:0px;
+    margin:0px;
+    border:0px;
+    width:@pagewidth - 16;
+    box-shadow:1px -1px 1px 0px #CCC;
+}
+
+.soclink {
+    text-decoration:none;
+}
+
+.socicon {
+    border:0;
+    width:32px;
+    height:32px;
+}
