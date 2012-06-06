@@ -100,10 +100,11 @@ li {
   text-align: right;
 }
 #description {
-  width: 788px;
+  width: 792px;
   border: 1px solid #dddddd;
   border-radius: 2px;
   background: #f3f3f3;
+  margin: 12px 4px;
 }
 #pagelogo {
   border: 0;
@@ -192,12 +193,13 @@ a#title {
 #footer {
   font-size: 0.7em;
   text-align: center;
+  padding: 8px 0px 8px 0px;
 }
 .groove {
   color: #f6f6f6;
   height: 1px;
   padding: 0px;
-  margin: 0px;
+  margin: 0px 8px 0px 8px;
   border: 0px;
   width: 784px;
   box-shadow: 1px -1px 1px 0px #cccccc;

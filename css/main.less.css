@@ -10,6 +10,8 @@
 @pagewidth: 800px;
 @contentbg: #F6F6F6;
 @contentpadding: 8px;
+@contentmargin: 4px;
+@contentmarginv: @contentmargin + @contentpadding;
 @bottomcornerradius: 10px;
 
 /* colors for content above main content div */
@@ -173,10 +175,11 @@ li {
 }
 
 #description {
-	width: @pagewidth - @contentpadding * 2 + 4;
+	width: @pagewidth - @contentmargin * 2;
     border:@descriptionborderwidth solid @descriptionbordercolor;
     .border-radius(@descriptionborderradius);
     background: @descriptionbgcolor;
+	margin: @contentmarginv @contentmargin;
 }
 
 #pagelogo {
@@ -274,13 +277,14 @@ a#title {
 #footer {
     font-size:0.7em;
     text-align:center;
+	padding:@contentpadding 0px @contentpadding 0px;
 }
 
 .groove {
     color:@contentbg;
     height:1px;
     padding:0px;
-    margin:0px;
+    margin:0px @contentpadding 0px @contentpadding;
     border:0px;
     width:@pagewidth - 16;
     box-shadow:1px -1px 1px 0px #CCC;
