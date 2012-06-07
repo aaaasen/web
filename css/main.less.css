@@ -2,6 +2,8 @@
 @bgimage: url('/img/bg/escher.png');
 @textcolor: #222;
 @mainfont: Helvetica;
+@topbarfont: 'Raleway', Helvetica, Arial, sans-serif;
+@headerfont: @topbarfont;
 @fontstyle: normal;
 @fontsize: 0.8em;
 @vmargin: 4px;
@@ -41,6 +43,10 @@
 @tableborderwidth: 1px;
 @tablebordercolor: @postbgcolor - #444;
 
+/* other */
+@rectangleovershoot: 16px;
+@rectangleheight: 32px;
+
 .border-radius (@radius: 5px) {
   border-radius: @radius;
 }
@@ -71,7 +77,7 @@ body {
     background-color:@contentbg;
     padding-left:@contentpadding;
     padding-right:@contentpadding;
-	.border-radius(@bottomcornerradius);
+    .border-radius(@bottomcornerradius);
 /*
     .border-bottom-right-radius(@bottomcornerradius);
     .border-bottom-left-radius(@bottomcornerradius);
@@ -81,7 +87,7 @@ body {
 
 table.homogenous {
 	table-layout: fixed;
-	width: 800px;
+	width: @pagewidth;
 }
 
 table.bordered {
@@ -174,7 +180,7 @@ li {
     text-align:right
 }
 
-#description {
+.description {
 	width: @pagewidth - @contentmargin * 2;
     border:@descriptionborderwidth solid @descriptionbordercolor;
     .border-radius(@descriptionborderradius);
@@ -182,10 +188,22 @@ li {
 	margin: @contentmarginv @contentmargin;
 }
 
-#pagelogo {
+.descriptionembed {
+    width: @pagewidth - @contentmargin * 2;
+    border:@descriptionborderwidth solid @descriptionbordercolor;
+    .border-radius(@descriptionborderradius);
+    background: @descriptionbgcolor;
+    position: relative;
+    top: -@rectangleovershoot * 2;
+    margin: 0px @contentmargin;
+}
+
+.pagelogo {
     border:0;
     width:64px;
+/*
     height:64px;
+*/
     padding:8px;
 }
 
@@ -220,48 +238,50 @@ li {
 .triangle-l {
     border-color: transparent lightgrey transparent transparent;
     border-style:solid;
-    border-width:16px;
+    border-width:@rectangleovershoot;
     height:0px;
     width:0px;
     position:relative;
-    left:-32px;
-    top:16px;
+    left:-@rectangleovershoot * 2;
+    top:@rectangleovershoot;
     z-index: -1; /* displayed under bubble */
 }
 
 .triangle-r {
     border-color:transparent transparent transparent lightgrey;
     border-style:solid;
-    border-width:16px;
+    border-width:@rectangleovershoot;
     height:0px;
     width:0px;
     position:relative;
-    left:800px;
-    top:-16px;
+    left:@pagewidth;
+    top:-@rectangleovershoot;
     z-index:-1;
 }
 
 .rectangle {
     background:@blocklinkcolor;
-    height:32px;
-    width:832px;
+    height:@rectangleheight;
+    width:@pagewidth + @rectangleovershoot * 2;
     position:relative;
-    left:-16px;
+    left:-@rectangleovershoot;
     top:0px;
     float:left;
     box-shadow: 0px 0px 4px 0px grey;
     border-top-left-radius:4px;
     border-top-right-radius:4px;
     z-index:100; 
+    margin: 0px;
 }
 
-.rectangle h2 {
+.linkspan {
     text-align:left;
-    font-family:Helvetica;
+    font-family:@headerfont;
     font-size:20px;
     position:relative;
-    top:-12px;
+    top:6px;
     padding-left:16px;
+    font-style: italic;
 }
 
 #topbar {
@@ -270,14 +290,15 @@ li {
 
 a#title { 
     font-weight:normal; 
-    font-family:'Raleway', Helvetica, Arial, sans-serif;
+    font-family: @topbarfont;
     font-size:4em;
 }
 
 #footer {
+    width: @pagewidth;
     font-size:0.7em;
     text-align:center;
-	padding:@contentpadding 0px @contentpadding 0px;
+    padding:@contentpadding 0px @contentpadding 0px;
 }
 
 .groove {
@@ -286,7 +307,7 @@ a#title {
     padding:0px;
     margin:0px @contentpadding 0px @contentpadding;
     border:0px;
-    width:@pagewidth - 16;
+    width:@pagewidth - @contentpadding * 2;
     box-shadow:1px -1px 1px 0px #CCC;
 }
 

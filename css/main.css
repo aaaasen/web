@@ -4,6 +4,7 @@
 /* text formatting */
 /* hyperlinks */
 /* tables */
+/* other */
 body {
   background-image: url('/img/bg/escher.png');
   color: #222222;
@@ -99,17 +100,29 @@ li {
 .right {
   text-align: right;
 }
-#description {
+.description {
   width: 792px;
   border: 1px solid #dddddd;
   border-radius: 2px;
   background: #f3f3f3;
   margin: 12px 4px;
 }
-#pagelogo {
+.descriptionembed {
+  width: 792px;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  background: #f3f3f3;
+  position: relative;
+  top: -32px;
+  margin: 0px 4px;
+}
+.pagelogo {
   border: 0;
   width: 64px;
-  height: 64px;
+  /*
+    height:64px;
+*/
+
   padding: 8px;
 }
 .logoholder {
@@ -173,14 +186,16 @@ li {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   z-index: 100;
+  margin: 0px;
 }
-.rectangle h2 {
+.linkspan {
   text-align: left;
-  font-family: Helvetica;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-size: 20px;
   position: relative;
-  top: -12px;
+  top: 6px;
   padding-left: 16px;
+  font-style: italic;
 }
 #topbar {
   padding: 8px 0px 0px 0px;
@@ -191,6 +206,7 @@ a#title {
   font-size: 4em;
 }
 #footer {
+  width: 800px;
   font-size: 0.7em;
   text-align: center;
   padding: 8px 0px 8px 0px;
