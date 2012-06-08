@@ -21,6 +21,7 @@
 @postbordercolor: #DDD;
 @postborderradius: 2px;
 @postborderwidth: 1px;
+@postpadding: 12px;
 
 @descriptionbgcolor: @postbgcolor;
 @descriptionbordercolor: @postbordercolor;
@@ -42,10 +43,13 @@
 /* tables */
 @tableborderwidth: 1px;
 @tablebordercolor: @postbgcolor - #444;
+@tablecellpadding: 1px;
 
 /* other */
 @rectangleovershoot: 16px;
 @rectangleheight: 32px;
+
+@navbarselectcolor: #222;
 
 .border-radius (@radius: 5px) {
   border-radius: @radius;
@@ -96,7 +100,8 @@ table.bordered {
 }
 
 td { 
-	padding: 0px; 
+	padding-left:@tablecellpadding; 
+	padding-right:@tablecellpadding;
 }
 
 .tabledivider {
@@ -159,16 +164,15 @@ a.block:active {
 	.box-shadow(0px 0px @blocklinkblur 0px grey inset);
 }
 
+a.blockdepressed:link {
+/*    background-color:@blocklinkcolor - #666;*/
+        .box-shadow(0px 0px @blocklinkblur 0px @navbarselectcolor);
 
-ul {
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    overflow:hidden;
 }
 
-li { 
-	float:left; 
+ul {
+    padding-left:16px;
+    margin:0px;
 }
 
 .center {
@@ -231,8 +235,8 @@ li {
     position:relative;
     top:-32px;
     background:#F3F3F3;
-    padding-left:8px;
-	width: @pagewidth - @contentpadding * 2;
+    padding:@postpadding;
+    width: @pagewidth - @postpadding * 2;
 }
 
 .triangle-l {
