@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /tecton/
+Disallow: /cgi/
+Disallow: /img/xcf
+Disallow: /share/
