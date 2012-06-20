@@ -1,0 +1,9 @@
+<div id="linkbar">
+  <table id="navbar" class="homogenous" width="100%" cellpadding="0px" cellspacing="0px">
+    <tr>
+      <td><a id="linkbarhome" class="block" href="/index.html">home</a></td>
+      <td><a id="linkbarprojects" class="block" href="/projects.html">code</a></td>
+      <td><a id="linkbarminecraft" class="block" href="/minecraft.html">art</a></td>
+    </tr>
+  </table>
+</div>
