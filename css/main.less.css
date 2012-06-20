@@ -49,7 +49,7 @@
 @rectangleovershoot: 16px;
 @rectangleheight: 32px;
 
-@navbarselectcolor: #222;
+@navbarselectcolor: #777;
 
 .border-radius (@radius: 5px) {
   border-radius: @radius;
