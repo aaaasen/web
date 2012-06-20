@@ -1,5 +1,7 @@
 User-agent: *
 Disallow: /tecton/
 Disallow: /cgi/
-Disallow: /img/xcf
+Disallow: /img/xcf/
+Disallow: /img/bg/
+Disallow: /img/social/
 Disallow: /share/
