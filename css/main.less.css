@@ -1,6 +1,6 @@
 /* main variable for entire body */
-@bgimage: url('/img/bg/escher.png');
-@textcolor: #222;
+@bgimage: url('/img/bg/txture.png');
+@textcolor: #21F10C;
 @mainfont: Helvetica;
 @topbarfont: 'Raleway', Helvetica, Arial, sans-serif;
 @headerfont: @topbarfont;
@@ -10,15 +10,15 @@
 
 /* variable which affect the main div content */
 @pagewidth: 800px;
-@contentbg: #F6F6F6;
+@contentbg: #222;
 @contentpadding: 8px;
 @contentmargin: 4px;
 @contentmarginv: @contentmargin + @contentpadding;
 @bottomcornerradius: 10px;
 
 /* colors for content above main content div */
-@postbgcolor: #F3F3F3;
-@postbordercolor: #DDD;
+@postbgcolor: @contentbg + #222;
+@postbordercolor: @postbgcolor + #222;
 @postborderradius: 2px;
 @postborderwidth: 1px;
 @postpadding: 12px;
@@ -32,11 +32,11 @@
 @textindent: 8px;
 
 /* hyperlinks */
-@linkcolor: #111;
-@blocklinkcolor: #EEE;
-@blocklinktextcolor: #000;
+@linkcolor: @textcolor - #111;
+@blocklinkcolor: @postbgcolor;
+@blocklinktextcolor: @textcolor;
 @blocklinkpadding: 8px;
-@blocklinkbordercolor: #DDD;
+@blocklinkbordercolor: @blocklinkcolor + #111;
 @blocklinkborderwidth: 1px;
 @blocklinkblur: 4px;
 
@@ -234,13 +234,13 @@ ul {
 	.border-radius(@postborderradius);
     position:relative;
     top:-32px;
-    background:#F3F3F3;
+    background:@postbgcolor;
     padding:@postpadding;
     width: @pagewidth - @postpadding * 2;
 }
 
 .triangle-l {
-    border-color: transparent lightgrey transparent transparent;
+    border-color: transparent #444 transparent transparent;
     border-style:solid;
     border-width:@rectangleovershoot;
     height:0px;
@@ -252,7 +252,7 @@ ul {
 }
 
 .triangle-r {
-    border-color:transparent transparent transparent lightgrey;
+    border-color:transparent transparent transparent #444;
     border-style:solid;
     border-width:@rectangleovershoot;
     height:0px;
@@ -312,7 +312,7 @@ a#title {
     margin:0px @contentpadding 0px @contentpadding;
     border:0px;
     width:@pagewidth - @contentpadding * 2;
-    box-shadow:1px -1px 1px 0px #CCC;
+    box-shadow:1px -1px 1px 0px @contentbg - #222;
 }
 
 .soclink {

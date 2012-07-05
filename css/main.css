@@ -6,8 +6,8 @@
 /* tables */
 /* other */
 body {
-  background-image: url('/img/bg/escher.png');
-  color: #222222;
+  background-image: url('/img/bg/txture.png');
+  color: #21f10c;
   font-style: normal;
   font-size: 0.8em;
   font-family: Helvetica;
@@ -15,7 +15,7 @@ body {
 }
 #content {
   width: 800px;
-  background-color: #f6f6f6;
+  background-color: #222222;
   padding-left: 8px;
   padding-right: 8px;
   border-radius: 10px;
@@ -31,7 +31,7 @@ table.homogenous {
   width: 800px;
 }
 table.bordered {
-  border: solid #afafaf 1px;
+  border: solid #000000 1px;
   border-radius: 2px;
 }
 td {
@@ -39,7 +39,7 @@ td {
   padding-right: 1px;
 }
 .tabledivider {
-  background: #afafaf;
+  background: #000000;
 }
 p.lpara {
   text-align: left;
@@ -50,21 +50,21 @@ a {
   font-weight: bold;
 }
 a:link {
-  color: #111111;
+  color: #10e000;
 }
 a:visited {
-  color: #111111;
+  color: #10e000;
 }
 a:hover {
-  color: #444444;
+  color: #43ff2e;
 }
 a:active {
-  color: #000000;
+  color: #00cf00;
 }
 a.block {
   display: block;
-  color: #000000;
-  background-color: #eeeeee;
+  color: #21f10c;
+  background-color: #444444;
   padding: 8px;
   text-align: center;
   text-decoration: none;
@@ -74,15 +74,15 @@ a.block {
 }
 a.block:link,
 a.block:visited {
-  border: solid #dddddd 1px;
+  border: solid #555555 1px;
   box-shadow: 0px 0px 4px 0px #a9a9a9;
 }
 a.block:hover {
-  border: solid #eeeeee 1px;
+  border: solid #666666 1px;
   box-shadow: 0px 0px 6px 0px #a9a9a9;
 }
 a.block:active {
-  border: solid #eeeeee 1px;
+  border: solid #666666 1px;
   box-shadow: 0px 0px 4px 0px #808080 inset;
 }
 a.blockdepressed:link {
@@ -103,16 +103,16 @@ ul {
 }
 .description {
   width: 792px;
-  border: 1px solid #dddddd;
+  border: 1px solid #666666;
   border-radius: 2px;
-  background: #f3f3f3;
+  background: #444444;
   margin: 12px 4px;
 }
 .descriptionembed {
   width: 792px;
-  border: 1px solid #dddddd;
+  border: 1px solid #666666;
   border-radius: 2px;
-  background: #f3f3f3;
+  background: #444444;
   position: relative;
   top: -32px;
   margin: 0px 4px;
@@ -128,7 +128,7 @@ ul {
 }
 .logoholder {
   width: 80px;
-  background: #eeeeee;
+  background: #444444;
   box-shadow: 0px 0px 4px 0px #808080 inset;
   border-radius: 2px;
 }
@@ -143,16 +143,16 @@ ul {
   width: inherit;
 }
 .post {
-  border: 1px solid #dddddd;
+  border: 1px solid #666666;
   border-radius: 2px;
   position: relative;
   top: -32px;
-  background: #F3F3F3;
+  background: #444444;
   padding: 12px;
   width: 776px;
 }
 .triangle-l {
-  border-color: transparent lightgrey transparent transparent;
+  border-color: transparent #444 transparent transparent;
   border-style: solid;
   border-width: 16px;
   height: 0px;
@@ -165,7 +165,7 @@ ul {
 
 }
 .triangle-r {
-  border-color: transparent transparent transparent lightgrey;
+  border-color: transparent transparent transparent #444;
   border-style: solid;
   border-width: 16px;
   height: 0px;
@@ -176,7 +176,7 @@ ul {
   z-index: -1;
 }
 .rectangle {
-  background: #eeeeee;
+  background: #444444;
   height: 32px;
   width: 832px;
   position: relative;
@@ -213,13 +213,13 @@ a#title {
   padding: 8px 0px 8px 0px;
 }
 .groove {
-  color: #f6f6f6;
+  color: #222222;
   height: 1px;
   padding: 0px;
   margin: 0px 8px 0px 8px;
   border: 0px;
   width: 784px;
-  box-shadow: 1px -1px 1px 0px #cccccc;
+  box-shadow: 1px -1px 1px 0px #000000;
 }
 .soclink {
   text-decoration: none;
