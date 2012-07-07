@@ -1,21 +1,33 @@
 /* main variable for entire body */
+/*@textcolor: #21F10C;*/
 /* variable which affect the main div content */
+/*@contentbg: #222;*/
+/*orange*/
+/*@contentbg: #00f1ff;*//*cyan*/
 /* colors for content above main content div */
+/*@postbgcolor: #00f1ff;*/
 /* text formatting */
 /* hyperlinks */
 /* tables */
 /* other */
 body {
-  background-image: url('/img/bg/txture.png');
-  color: #21f10c;
+  background-image: url('/img/bg/cartographer.png');
+  color: #444444;
   font-style: normal;
   font-size: 0.8em;
   font-family: Helvetica;
   margin: 4px 0px;
 }
 #content {
+  background-image: -moz-linear-gradient(bottom, #ffae00 0%, #fbff00 100%);
+  background-image: -o-linear-gradient(bottom, #ffae00 0%, #fbff00 100%);
+  background-image: linear-gradient(bottom, #ffae00 0%, #fbff00 100%);
+  background-image: -webkit-linear-gradient(bottom, #ffae00 0%, #fbff00 100%);
   width: 800px;
-  background-color: #222222;
+  /*background-color:@contentbg;*/
+
+  /**background-color:spin(@contentbg, 15%);*/
+
   padding-left: 8px;
   padding-right: 8px;
   border-radius: 10px;
@@ -31,7 +43,7 @@ table.homogenous {
   width: 800px;
 }
 table.bordered {
-  border: solid #000000 1px;
+  border: solid #bb9500 1px;
   border-radius: 2px;
 }
 td {
@@ -39,7 +51,7 @@ td {
   padding-right: 1px;
 }
 .tabledivider {
-  background: #000000;
+  background: #bb9500;
 }
 p.lpara {
   text-align: left;
@@ -50,21 +62,21 @@ a {
   font-weight: bold;
 }
 a:link {
-  color: #10e000;
+  color: #333333;
 }
 a:visited {
-  color: #10e000;
+  color: #333333;
 }
 a:hover {
-  color: #43ff2e;
+  color: #666666;
 }
 a:active {
-  color: #00cf00;
+  color: #222222;
 }
 a.block {
   display: block;
-  color: #21f10c;
-  background-color: #444444;
+  color: #444444;
+  background-color: #ffd900;
   padding: 8px;
   text-align: center;
   text-decoration: none;
@@ -74,15 +86,15 @@ a.block {
 }
 a.block:link,
 a.block:visited {
-  border: solid #555555 1px;
+  border: solid #ffea11 1px;
   box-shadow: 0px 0px 4px 0px #a9a9a9;
 }
 a.block:hover {
-  border: solid #666666 1px;
+  border: solid #fffb22 1px;
   box-shadow: 0px 0px 6px 0px #a9a9a9;
 }
 a.block:active {
-  border: solid #666666 1px;
+  border: solid #fffb22 1px;
   box-shadow: 0px 0px 4px 0px #808080 inset;
 }
 a.blockdepressed:link {
@@ -103,16 +115,16 @@ ul {
 }
 .description {
   width: 792px;
-  border: 1px solid #666666;
+  border: 1px solid #fffb22;
   border-radius: 2px;
-  background: #444444;
+  background: #ffd900;
   margin: 12px 4px;
 }
 .descriptionembed {
   width: 792px;
-  border: 1px solid #666666;
+  border: 1px solid #fffb22;
   border-radius: 2px;
-  background: #444444;
+  background: #ffd900;
   position: relative;
   top: -32px;
   margin: 0px 4px;
@@ -128,7 +140,7 @@ ul {
 }
 .logoholder {
   width: 80px;
-  background: #444444;
+  background: #ffd900;
   box-shadow: 0px 0px 4px 0px #808080 inset;
   border-radius: 2px;
 }
@@ -143,16 +155,16 @@ ul {
   width: inherit;
 }
 .post {
-  border: 1px solid #666666;
+  border: 1px solid #fffb22;
   border-radius: 2px;
   position: relative;
   top: -32px;
-  background: #444444;
+  background: #ffd900;
   padding: 12px;
   width: 776px;
 }
 .triangle-l {
-  border-color: transparent #444 transparent transparent;
+  border-color: transparent white transparent transparent;
   border-style: solid;
   border-width: 16px;
   height: 0px;
@@ -165,7 +177,7 @@ ul {
 
 }
 .triangle-r {
-  border-color: transparent transparent transparent #444;
+  border-color: transparent transparent transparent white;
   border-style: solid;
   border-width: 16px;
   height: 0px;
@@ -176,7 +188,7 @@ ul {
   z-index: -1;
 }
 .rectangle {
-  background: #444444;
+  background: #ffd900;
   height: 32px;
   width: 832px;
   position: relative;
@@ -213,13 +225,13 @@ a#title {
   padding: 8px 0px 8px 0px;
 }
 .groove {
-  color: #222222;
+  color: #ffae00;
   height: 1px;
   padding: 0px;
   margin: 0px 8px 0px 8px;
   border: 0px;
   width: 784px;
-  box-shadow: 1px -1px 1px 0px #000000;
+  box-shadow: 1px -1px 1px 0px #dd8c00;
 }
 .soclink {
   text-decoration: none;

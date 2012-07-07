@@ -1,6 +1,7 @@
 /* main variable for entire body */
-@bgimage: url('/img/bg/txture.png');
-@textcolor: #21F10C;
+@bgimage: url('/img/bg/cartographer.png');
+/*@textcolor: #21F10C;*/
+@textcolor: #444;
 @mainfont: Helvetica;
 @topbarfont: 'Raleway', Helvetica, Arial, sans-serif;
 @headerfont: @topbarfont;
@@ -10,14 +11,18 @@
 
 /* variable which affect the main div content */
 @pagewidth: 800px;
-@contentbg: #222;
+/*@contentbg: #222;*/
+//@contentbg: #ff038d; /*gay*/
+@contentbg: #ffae00; /*orange*/
+/*@contentbg: #00f1ff;*/ /*cyan*/
 @contentpadding: 8px;
 @contentmargin: 4px;
 @contentmarginv: @contentmargin + @contentpadding;
 @bottomcornerradius: 10px;
 
 /* colors for content above main content div */
-@postbgcolor: @contentbg + #222;
+@postbgcolor: spin(@contentbg, 10%);
+/*@postbgcolor: #00f1ff;*/
 @postbordercolor: @postbgcolor + #222;
 @postborderradius: 2px;
 @postborderwidth: 1px;
@@ -77,8 +82,15 @@ body {
 }
 
 #content {
+    background-image:-moz-linear-gradient(bottom, @contentbg 0%, spin(@contentbg, 20%) 100%);
+    background-image:-o-linear-gradient(bottom, @contentbg 0%, spin(@contentbg, 20%) 100%);
+    background-image:linear-gradient(bottom, @contentbg 0%, spin(@contentbg, 20%) 100%);
+    background-image:-webkit-linear-gradient(bottom, @contentbg 0%, spin(@contentbg, 20%) 100%);
+//    background-image:-webkit-gradient(linear, left top, right bottom, color-stop(0, @contentbg), color-stop(1, spin(@contentbg, 20%));
+
     width:@pagewidth;
-    background-color:@contentbg;
+    /*background-color:@contentbg;*/
+    /**background-color:spin(@contentbg, 15%);*/
     padding-left:@contentpadding;
     padding-right:@contentpadding;
     .border-radius(@bottomcornerradius);
@@ -240,7 +252,7 @@ ul {
 }
 
 .triangle-l {
-    border-color: transparent #444 transparent transparent;
+    border-color: transparent white transparent transparent;
     border-style:solid;
     border-width:@rectangleovershoot;
     height:0px;
@@ -252,7 +264,7 @@ ul {
 }
 
 .triangle-r {
-    border-color:transparent transparent transparent #444;
+    border-color:transparent transparent transparent white;
     border-style:solid;
     border-width:@rectangleovershoot;
     height:0px;
