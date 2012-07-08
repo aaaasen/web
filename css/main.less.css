@@ -1,19 +1,20 @@
 /* main variable for entire body */
 @bgimage: url('/img/bg/cartographer.png');
 /*@textcolor: #21F10C;*/
-@textcolor: #444;
+@textcolor: #fff;
+//@textcolor: #666;
 @mainfont: Helvetica;
 @topbarfont: 'Raleway', Helvetica, Arial, sans-serif;
 @headerfont: @topbarfont;
 @fontstyle: normal;
 @fontsize: 0.8em;
-@vmargin: 4px;
+@vmargin: 16px;
 
 /* variable which affect the main div content */
 @pagewidth: 800px;
 /*@contentbg: #222;*/
-//@contentbg: #ff038d; /*gay*/
-@contentbg: #ffae00; /*orange*/
+@contentbg: #00fffc; /*gay*/
+//@contentbg: #fffc00; /*orange*/
 /*@contentbg: #00f1ff;*/ /*cyan*/
 @contentpadding: 8px;
 @contentmargin: 4px;
@@ -47,14 +48,16 @@
 
 /* tables */
 @tableborderwidth: 1px;
-@tablebordercolor: @postbgcolor - #444;
+@tablebordercolor: @postbgcolor;
 @tablecellpadding: 1px;
 
 /* other */
 @rectangleovershoot: 16px;
 @rectangleheight: 32px;
 
-@navbarselectcolor: #777;
+@navbarselectcolor: #fff;
+@bscolor: #fff;
+@bsdarkcolor: #fff;
 
 .border-radius (@radius: 5px) {
   border-radius: @radius;
@@ -82,6 +85,7 @@ body {
 }
 
 #content {
+    background-color:@contentbg;
     background-image:-moz-linear-gradient(bottom, @contentbg 0%, spin(@contentbg, 20%) 100%);
     background-image:-o-linear-gradient(bottom, @contentbg 0%, spin(@contentbg, 20%) 100%);
     background-image:linear-gradient(bottom, @contentbg 0%, spin(@contentbg, 20%) 100%);
@@ -98,7 +102,7 @@ body {
     .border-bottom-right-radius(@bottomcornerradius);
     .border-bottom-left-radius(@bottomcornerradius);
 */
-    .box-shadow(0px 0px 4px 0px grey);
+    .box-shadow(0px 0px 4px 0px @bscolor);
 }
 
 table.homogenous {
@@ -163,17 +167,17 @@ a.block {
 		
 a.block:link, a.block:visited {
 	border:solid @blocklinkbordercolor @blocklinkborderwidth;
-	.box-shadow(0px 0px @blocklinkblur 0px darkgrey);
+	.box-shadow(0px 0px @blocklinkblur 0px @bsdarkcolor);
 }		
 
 a.block:hover {
 	border:solid @blocklinkbordercolor + #111 @blocklinkborderwidth;
-	.box-shadow(0px 0px @blocklinkblur + 2 0px darkgrey);
+	.box-shadow(0px 0px @blocklinkblur + 2 0px @bsdarkcolor);
 }
 		
 a.block:active {
 	border:solid @blocklinkbordercolor + #111 @blocklinkborderwidth;
-	.box-shadow(0px 0px @blocklinkblur 0px grey inset);
+	.box-shadow(0px 0px @blocklinkblur 0px @bscolor inset);
 }
 
 a.blockdepressed:link {
@@ -226,7 +230,7 @@ ul {
 .logoholder {
 	width:80px;
 	background: @blocklinkcolor;
-	.box-shadow(0px 0px 4px 0px grey inset);
+	.box-shadow(0px 0px 4px 0px @bscolor inset);
 	.border-radius(@descriptionborderradius);
 }
 
@@ -283,7 +287,7 @@ ul {
     left:-@rectangleovershoot;
     top:0px;
     float:left;
-    box-shadow: 0px 0px 4px 0px grey;
+    box-shadow: 0px 0px 4px 0px @bscolor;
     border-top-left-radius:4px;
     border-top-right-radius:4px;
     z-index:100; 

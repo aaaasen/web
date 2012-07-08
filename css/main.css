@@ -2,7 +2,7 @@
 /*@textcolor: #21F10C;*/
 /* variable which affect the main div content */
 /*@contentbg: #222;*/
-/*orange*/
+/*gay*/
 /*@contentbg: #00f1ff;*//*cyan*/
 /* colors for content above main content div */
 /*@postbgcolor: #00f1ff;*/
@@ -12,17 +12,18 @@
 /* other */
 body {
   background-image: url('/img/bg/cartographer.png');
-  color: #444444;
+  color: #ffffff;
   font-style: normal;
   font-size: 0.8em;
   font-family: Helvetica;
-  margin: 4px 0px;
+  margin: 16px 0px;
 }
 #content {
-  background-image: -moz-linear-gradient(bottom, #ffae00 0%, #fbff00 100%);
-  background-image: -o-linear-gradient(bottom, #ffae00 0%, #fbff00 100%);
-  background-image: linear-gradient(bottom, #ffae00 0%, #fbff00 100%);
-  background-image: -webkit-linear-gradient(bottom, #ffae00 0%, #fbff00 100%);
+  background-color: #00fffc;
+  background-image: -moz-linear-gradient(bottom, #00fffc 0%, #00adff 100%);
+  background-image: -o-linear-gradient(bottom, #00fffc 0%, #00adff 100%);
+  background-image: linear-gradient(bottom, #00fffc 0%, #00adff 100%);
+  background-image: -webkit-linear-gradient(bottom, #00fffc 0%, #00adff 100%);
   width: 800px;
   /*background-color:@contentbg;*/
 
@@ -36,14 +37,14 @@ body {
     .border-bottom-left-radius(@bottomcornerradius);
 */
 
-  box-shadow: 0px 0px 4px 0px #808080;
+  box-shadow: 0px 0px 4px 0px #ffffff;
 }
 table.homogenous {
   table-layout: fixed;
   width: 800px;
 }
 table.bordered {
-  border: solid #bb9500 1px;
+  border: solid #00d7ff 1px;
   border-radius: 2px;
 }
 td {
@@ -51,7 +52,7 @@ td {
   padding-right: 1px;
 }
 .tabledivider {
-  background: #bb9500;
+  background: #00d7ff;
 }
 p.lpara {
   text-align: left;
@@ -62,21 +63,21 @@ a {
   font-weight: bold;
 }
 a:link {
-  color: #333333;
+  color: #eeeeee;
 }
 a:visited {
-  color: #333333;
+  color: #eeeeee;
 }
 a:hover {
-  color: #666666;
+  color: #ffffff;
 }
 a:active {
-  color: #222222;
+  color: #dddddd;
 }
 a.block {
   display: block;
-  color: #444444;
-  background-color: #ffd900;
+  color: #ffffff;
+  background-color: #00d7ff;
   padding: 8px;
   text-align: center;
   text-decoration: none;
@@ -86,21 +87,21 @@ a.block {
 }
 a.block:link,
 a.block:visited {
-  border: solid #ffea11 1px;
-  box-shadow: 0px 0px 4px 0px #a9a9a9;
+  border: solid #11e8ff 1px;
+  box-shadow: 0px 0px 4px 0px #ffffff;
 }
 a.block:hover {
-  border: solid #fffb22 1px;
-  box-shadow: 0px 0px 6px 0px #a9a9a9;
+  border: solid #22f9ff 1px;
+  box-shadow: 0px 0px 6px 0px #ffffff;
 }
 a.block:active {
-  border: solid #fffb22 1px;
-  box-shadow: 0px 0px 4px 0px #808080 inset;
+  border: solid #22f9ff 1px;
+  box-shadow: 0px 0px 4px 0px #ffffff inset;
 }
 a.blockdepressed:link {
   /*    background-color:@blocklinkcolor - #666;*/
 
-  box-shadow: 0px 0px 4px 0px #777777;
+  box-shadow: 0px 0px 4px 0px #ffffff;
 }
 ul {
   padding-left: 16px;
@@ -115,16 +116,16 @@ ul {
 }
 .description {
   width: 792px;
-  border: 1px solid #fffb22;
+  border: 1px solid #22f9ff;
   border-radius: 2px;
-  background: #ffd900;
+  background: #00d7ff;
   margin: 12px 4px;
 }
 .descriptionembed {
   width: 792px;
-  border: 1px solid #fffb22;
+  border: 1px solid #22f9ff;
   border-radius: 2px;
-  background: #ffd900;
+  background: #00d7ff;
   position: relative;
   top: -32px;
   margin: 0px 4px;
@@ -140,8 +141,8 @@ ul {
 }
 .logoholder {
   width: 80px;
-  background: #ffd900;
-  box-shadow: 0px 0px 4px 0px #808080 inset;
+  background: #00d7ff;
+  box-shadow: 0px 0px 4px 0px #ffffff inset;
   border-radius: 2px;
 }
 #linkbar {
@@ -155,11 +156,11 @@ ul {
   width: inherit;
 }
 .post {
-  border: 1px solid #fffb22;
+  border: 1px solid #22f9ff;
   border-radius: 2px;
   position: relative;
   top: -32px;
-  background: #ffd900;
+  background: #00d7ff;
   padding: 12px;
   width: 776px;
 }
@@ -188,14 +189,14 @@ ul {
   z-index: -1;
 }
 .rectangle {
-  background: #ffd900;
+  background: #00d7ff;
   height: 32px;
   width: 832px;
   position: relative;
   left: -16px;
   top: 0px;
   float: left;
-  box-shadow: 0px 0px 4px 0px grey;
+  box-shadow: 0px 0px 4px 0px #ffffff;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   z-index: 100;
@@ -225,13 +226,13 @@ a#title {
   padding: 8px 0px 8px 0px;
 }
 .groove {
-  color: #ffae00;
+  color: #00fffc;
   height: 1px;
   padding: 0px;
   margin: 0px 8px 0px 8px;
   border: 0px;
   width: 784px;
-  box-shadow: 1px -1px 1px 0px #dd8c00;
+  box-shadow: 1px -1px 1px 0px #00ddda;
 }
 .soclink {
   text-decoration: none;
