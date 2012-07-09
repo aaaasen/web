@@ -31,7 +31,7 @@
 
 @descriptionbgcolor: @postbgcolor;
 @descriptionbordercolor: @postbordercolor;
-@descriptionborderradius: @postborderradius;
+@descriptionborderradius: 1px;
 @descriptionborderwidth: @postborderwidth;
 
 /* text formatting */
@@ -97,6 +97,7 @@ body {
     /**background-color:spin(@contentbg, 15%);*/
     padding-left:@contentpadding;
     padding-right:@contentpadding;
+    padding-bottom:@contentpadding;
     .border-radius(@bottomcornerradius);
 /*
     .border-bottom-right-radius(@bottomcornerradius);
@@ -205,7 +206,6 @@ ul {
     border:@descriptionborderwidth solid @descriptionbordercolor;
     .border-radius(@descriptionborderradius);
     background: @descriptionbgcolor;
-	margin: @contentmarginv @contentmargin;
 }
 
 .descriptionembed {
@@ -213,9 +213,6 @@ ul {
     border:@descriptionborderwidth solid @descriptionbordercolor;
     .border-radius(@descriptionborderradius);
     background: @descriptionbgcolor;
-    position: relative;
-    top: -@rectangleovershoot * 2;
-    margin: 0px @contentmargin;
 }
 
 .pagelogo {
@@ -230,7 +227,7 @@ ul {
 .logoholder {
 	width:80px;
 	background: @blocklinkcolor;
-	.box-shadow(0px 0px 4px 0px @bscolor inset);
+	.box-shadow(0px 0px 2px 0px @bscolor inset);
 	.border-radius(@descriptionborderradius);
 }
 
@@ -238,6 +235,7 @@ ul {
 	position: relative;
 	left: -@contentpadding;
 	width: @pagewidth + @contentpadding * 2;
+	margin-bottom:12px;
 /*	width: @pagewidth + @contentpadding * 2;*/
 }
 
@@ -248,60 +246,32 @@ ul {
 .post {
     border:@postborderwidth solid @postbordercolor;
 	.border-radius(@postborderradius);
-    position:relative;
-    top:-32px;
     background:@postbgcolor;
+//    padding:@postpadding;
+//    width: @pagewidth;
+	width: @pagewidth - @contentmargin * 2 + 1;
+    margin:auto;
+}
+
+.postcontent {
     padding:@postpadding;
-    width: @pagewidth - @postpadding * 2;
-}
-
-.triangle-l {
-    border-color: transparent white transparent transparent;
-    border-style:solid;
-    border-width:@rectangleovershoot;
-    height:0px;
-    width:0px;
-    position:relative;
-    left:-@rectangleovershoot * 2;
-    top:@rectangleovershoot;
-    z-index: -1; /* displayed under bubble */
-}
-
-.triangle-r {
-    border-color:transparent transparent transparent white;
-    border-style:solid;
-    border-width:@rectangleovershoot;
-    height:0px;
-    width:0px;
-    position:relative;
-    left:@pagewidth;
-    top:-@rectangleovershoot;
-    z-index:-1;
 }
 
 .rectangle {
     background:@blocklinkcolor;
-    height:@rectangleheight;
-    width:@pagewidth + @rectangleovershoot * 2;
-    position:relative;
-    left:-@rectangleovershoot;
-    top:0px;
-    float:left;
     box-shadow: 0px 0px 4px 0px @bscolor;
     border-top-left-radius:4px;
     border-top-right-radius:4px;
-    z-index:100; 
-    margin: 0px;
+    padding-top:4px;
+    padding-bottom:4px;
 }
 
 .linkspan {
     text-align:left;
     font-family:@headerfont;
     font-size:20px;
-    position:relative;
-    top:6px;
     padding-left:16px;
-    font-style: italic;
+    font-weight:bold;
 }
 
 #topbar {
@@ -322,13 +292,13 @@ a#title {
 }
 
 .groove {
-    color:@contentbg;
-    height:1px;
+    color:@textcolor;
+    height:2px;
     padding:0px;
-    margin:0px @contentpadding 0px @contentpadding;
+    margin:8px 0px 12px 0px;
     border:0px;
-    width:@pagewidth - @contentpadding * 2;
-    box-shadow:1px -1px 1px 0px @contentbg - #222;
+    width:100%;
+    box-shadow:0px 1px 1px 0px lighten(@contentbg, 20%);
 }
 
 .soclink {

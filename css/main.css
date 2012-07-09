@@ -31,6 +31,7 @@ body {
 
   padding-left: 8px;
   padding-right: 8px;
+  padding-bottom: 8px;
   border-radius: 10px;
   /*
     .border-bottom-right-radius(@bottomcornerradius);
@@ -117,18 +118,14 @@ ul {
 .description {
   width: 792px;
   border: 1px solid #22f9ff;
-  border-radius: 2px;
+  border-radius: 1px;
   background: #00d7ff;
-  margin: 12px 4px;
 }
 .descriptionembed {
   width: 792px;
   border: 1px solid #22f9ff;
-  border-radius: 2px;
+  border-radius: 1px;
   background: #00d7ff;
-  position: relative;
-  top: -32px;
-  margin: 0px 4px;
 }
 .pagelogo {
   border: 0;
@@ -142,13 +139,14 @@ ul {
 .logoholder {
   width: 80px;
   background: #00d7ff;
-  box-shadow: 0px 0px 4px 0px #ffffff inset;
-  border-radius: 2px;
+  box-shadow: 0px 0px 2px 0px #ffffff inset;
+  border-radius: 1px;
 }
 #linkbar {
   position: relative;
   left: -8px;
   width: 816px;
+  margin-bottom: 12px;
   /*	width: @pagewidth + @contentpadding * 2;*/
 
 }
@@ -158,58 +156,27 @@ ul {
 .post {
   border: 1px solid #22f9ff;
   border-radius: 2px;
-  position: relative;
-  top: -32px;
   background: #00d7ff;
+  width: 793px;
+  margin: auto;
+}
+.postcontent {
   padding: 12px;
-  width: 776px;
-}
-.triangle-l {
-  border-color: transparent white transparent transparent;
-  border-style: solid;
-  border-width: 16px;
-  height: 0px;
-  width: 0px;
-  position: relative;
-  left: -32px;
-  top: 16px;
-  z-index: -1;
-  /* displayed under bubble */
-
-}
-.triangle-r {
-  border-color: transparent transparent transparent white;
-  border-style: solid;
-  border-width: 16px;
-  height: 0px;
-  width: 0px;
-  position: relative;
-  left: 800px;
-  top: -16px;
-  z-index: -1;
 }
 .rectangle {
   background: #00d7ff;
-  height: 32px;
-  width: 832px;
-  position: relative;
-  left: -16px;
-  top: 0px;
-  float: left;
   box-shadow: 0px 0px 4px 0px #ffffff;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  z-index: 100;
-  margin: 0px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 .linkspan {
   text-align: left;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-size: 20px;
-  position: relative;
-  top: 6px;
   padding-left: 16px;
-  font-style: italic;
+  font-weight: bold;
 }
 #topbar {
   padding: 8px 0px 0px 0px;
@@ -226,13 +193,13 @@ a#title {
   padding: 8px 0px 8px 0px;
 }
 .groove {
-  color: #00fffc;
-  height: 1px;
+  color: #ffffff;
+  height: 2px;
   padding: 0px;
-  margin: 0px 8px 0px 8px;
+  margin: 8px 0px 12px 0px;
   border: 0px;
-  width: 784px;
-  box-shadow: 1px -1px 1px 0px #00ddda;
+  width: 100%;
+  box-shadow: 0px 1px 1px 0px #66fffd;
 }
 .soclink {
   text-decoration: none;
